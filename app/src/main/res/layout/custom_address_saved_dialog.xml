@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/cardstroke2"
+    android:backgroundTint="@color/llorange"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tvDialogTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Confirm Location"
+        android:fontFamily="@font/nunito"
+        android:textSize="20sp"
+        android:textFontWeight="500"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tvDialogMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDialogTitle"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/nunito"
+        android:text="Do you want to save this location?"
+        android:textSize="16sp"
+        android:textColor="@color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDialogMessage"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnDialogNo"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="No"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:fontFamily="@font/nunito"
+             android:background="@drawable/search_shape"
+            android:backgroundTint="@color/navy"
+            android:textColor="@color/white"
+
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnDialogYes"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginEnd="20dp"
+            android:textAllCaps="false"
+            android:gravity="center"
+            android:text="Yes"
+            android:fontFamily="@font/nunito"
+            android:textSize="16sp"
+            android:background="@drawable/search_shape"
+            android:backgroundTint="@color/navy"
+            android:textColor="@color/white"
+            android:layout_marginStart="20dp"
+             android:paddingTop="10dp"
+            android:paddingBottom="10dp" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

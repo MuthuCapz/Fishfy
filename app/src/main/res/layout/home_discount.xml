@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:backgroundTint="@color/lblue"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="3dp"
+    android:layout_marginEnd="1dp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginTop="8dp">
+
+    <LinearLayout
+        android:layout_width="115dp"
+        android:layout_height="240dp"
+        android:orientation="vertical"
+        android:background="@drawable/cardstroke1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="115dp"
+            android:layout_height="110dp"
+
+
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="5dp"
+            android:elevation="1dp"
+            app:cardBackgroundColor="@color/lblue"
+            app:cardCornerRadius="22dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+
+            <ImageView
+                android:id="@+id/freshfishImage"
+                android:layout_width="115dp"
+                android:layout_height="110dp"
+
+                android:contentDescription="@string/image_desc_text"
+                android:scaleType="centerCrop"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@tools:sample/avatars" />
+            <TextView
+                android:id="@+id/outOfStockLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Out of Stock"
+                android:fontFamily="@font/nunito"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:textColor="@android:color/holo_red_dark"
+                android:visibility="gone"
+                android:layout_gravity="center" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginTop="1dp"
+            android:ellipsize="end"
+            android:lineSpacingExtra="4dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="@font/nunito"
+            android:text="@string/food_name"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+        <TextView
+            android:id="@+id/discount"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:textFontWeight="500"
+            android:lineHeight="20px"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="0dp"
+            android:gravity="center"
+            android:ems="6"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/nunito"
+            android:text="30% Off"
+            android:textColor="@color/navy"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="195dp"
+        android:gravity="center"
+        android:padding="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:weightSum="3"
+        android:background="@drawable/linearbg"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/minusImageButton"
+            android:layout_width="12dp"
+            android:layout_height="15dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/navy"
+            android:src="@drawable/minus1" />
+
+        <TextView
+            android:id="@+id/quantityy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:fontFamily="@font/nunito"/>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/plusImageButton"
+            android:layout_width="15dp"
+            android:layout_height="20dp"
+            android:backgroundTint="@color/navy"
+            android:src="@drawable/add"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/shopname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="50dp"
+        android:text="shopname"
+        android:visibility="invisible"
+        app:layout_constraintCircleRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/favourite" />
+
+    <TextView
+        android:id="@+id/menuPrice1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="shopname"
+        android:visibility="invisible"
+        app:layout_constraintCircleRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/favourite" />
+</androidx.constraintlayout.widget.ConstraintLayout>

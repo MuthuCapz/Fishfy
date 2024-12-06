@@ -1,0 +1,14 @@
+<!-- res/drawable/card_stroke.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background layer -->
+    <item>
+        <shape android:shape="rectangle">
+            <!-- Gradient background -->
+            <gradient
+                android:startColor="#ff512f"
+                android:endColor="#f09819"
+                android:angle="360"/>
+
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,19 @@
+<!-- res/drawable/card_stroke.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background layer -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid
+                android:color="@color/llorange"/>
+            <corners
+                android:topRightRadius="30dp"
+                android:topLeftRadius="30dp"
+                />
+            <!-- Background color -->
+        </shape>
+
+    </item>
+
+
+
+</layer-list>

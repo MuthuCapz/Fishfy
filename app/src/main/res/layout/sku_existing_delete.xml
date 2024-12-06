@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:background="@drawable/cardstroke3">
+
+    <TextView
+        android:id="@+id/tv_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You can't Delete this item.because this item is someone's cart"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:fontFamily="@font/nunito"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:background="@color/navy"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/tv_message"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

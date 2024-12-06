@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/fishfyicon"
+        android:label="Fishfy"
+
+        android:name=".ui.activities.MyApp"
+        android:supportsRtl="true"
+        android:theme="@style/Base.Theme.Sea"
+        tools:targetApi="34">
+        <receiver
+            android:name=".ui.activities.Utils.SmsBroadcastReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED"/>
+            </intent-filter>
+        </receiver>
+        <activity
+            android:name=".ui.activities.DeleteAccountActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activities.ProfileManualAddress"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.activities.LocationNotAvailable"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activities.NotThereActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activities.LanguageActivity"
+            android:exported="false"
+            android:label="@string/title_activity_language"
+            android:theme="@style/Base.Theme.Sea" />
+        <activity
+            android:name=".ui.activities.ViewOrderDetails"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activities.OrderStatusActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".ui.activities.VerifyNumberActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.activities.ManualMap"
+            android:exported="true" />
+        <activity
+            android:name=".ui.activities.ProfileLanguageActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.activities.ManualLocation"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCzv33mFzK_SEECOHSx7EwIx-WbrypU1yo" />
+
+
+        <activity
+            android:name=".ui.activities.LocationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.activities.ContactusActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.activities.PayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activities.LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.activities.StartActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.activities.MapsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.activities.MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.activities.SplashScreen"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
