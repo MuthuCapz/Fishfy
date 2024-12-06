@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/cardstroke2"
+    android:backgroundTint="@color/llorange"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tvDialogTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Logout"
+        android:fontFamily="@font/nunito"
+        android:textSize="20sp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tvDialogMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDialogTitle"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/nunito"
+        android:text="Are you sure you want to logout?"
+        android:textSize="16sp"
+        android:textColor="@color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDialogMessage"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnDialogNo"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="No"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:fontFamily="@font/nunito"
+            android:backgroundTint="@color/navy"
+            android:gravity="center"
+            android:background="@drawable/search_shape"
+            android:textColor="@color/white"
+            android:padding="10dp" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnDialogYes"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Yes"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:fontFamily="@font/nunito"
+            android:backgroundTint="@color/navy"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/search_shape"
+            android:textColor="@color/white"
+            android:padding="10dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

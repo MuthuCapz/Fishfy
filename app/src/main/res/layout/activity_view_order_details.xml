@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/viewOrder"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@color/white">
+    <ImageButton
+        android:id="@+id/detailGoToBackImageButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arrow_left1"
+        android:contentDescription="@string/image_desc_text" />
+    <TextView
+        android:id="@+id/order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order Details"
+
+        android:textColor="@color/black"
+        android:fontFamily="@font/nunito"
+        android:textSize="20sp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/edit_text_shape"
+        android:elevation="5dp"
+        android:padding="16dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/cancelimg"
+            android:layout_width="230dp"
+            android:layout_height="230dp"
+            android:src="@drawable/cancelimg"
+            android:layout_marginBottom="20dp"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+        <!-- Existing TextViews -->
+
+        <TextView
+            android:id="@+id/cid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/navy"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/nunito"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Name" />
+
+        <ImageView
+            android:id="@+id/order_card_dotted_divider1"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginTop="6dp"
+            android:layerType="software"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cid"
+            app:srcCompat="@drawable/dotted_line_drawable" />
+
+        <TextView
+            android:id="@+id/oid"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:fontFamily="@font/nunito"
+            android:textColor="@color/navy"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/order_card_dotted_divider1"
+            tools:text="BIUGIFD928IUKGI" />
+
+
+        <TextView
+            android:id="@+id/skuid"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/navy"
+            android:textStyle="bold"
+            android:fontFamily="@font/nunito"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="" />
+
+        <TextView
+            android:id="@+id/shopnames"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/navy"
+            android:textStyle="bold"
+            android:fontFamily="@font/nunito"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="0dp"
+            android:fontFamily="@font/nunito"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/oid"
+            tools:text="Ordered On : January 1, 2021" />
+
+        <ImageView
+            android:id="@+id/order_card_dotted_divider"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/nunito"
+            android:layerType="software"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/time"
+            app:srcCompat="@drawable/dotted_line_drawable" />
+
+        <TextView
+            android:id="@+id/order_summary_status_label_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/nunito"
+            android:text="FoodName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/order_card_dotted_divider" />
+
+        <TextView
+            android:id="@+id/foodName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="@font/nunito"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/order_summary_status_label_tv"
+            app:layout_constraintTop_toBottomOf="@+id/order_card_dotted_divider"
+            tools:text="Shipping" />
+
+        <TextView
+            android:id="@+id/order_summary_items_label_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Quantity"
+            android:fontFamily="@font/nunito"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/foodName" />
+
+        <TextView
+            android:id="@+id/quantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/nunito"
+            android:layout_marginEnd="5dp"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/order_summary_items_label_tv"
+            app:layout_constraintTop_toBottomOf="@+id/foodName"
+            tools:text="4 items purchased" />
+
+        <TextView
+            android:id="@+id/order_summary_price_label_tv"
+            android:layout_width="0dp"
+            android:fontFamily="@font/nunito"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="FoodPrice"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/quantity" />
+
+        <TextView
+            android:id="@+id/foodPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/nunito"
+            android:layout_marginEnd="5dp"
+            android:textColor="@color/navy"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/order_summary_price_label_tv"
+            app:layout_constraintTop_toBottomOf="@+id/quantity"
+            tools:text="$123.45" />
+
+        <!-- New Delivery Slot Heading -->
+        <TextView
+            android:id="@+id/delivery_slot_label"
+            android:layout_width="0dp"
+            android:fontFamily="@font/nunito"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Delivery Slot"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/foodPrice" />
+
+        <!-- Delivery Slot Value -->
+        <TextView
+            android:id="@+id/slot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/delivery_slot_label"
+            app:layout_constraintTop_toBottomOf="@+id/foodPrice"
+            tools:text="10:00 AM - 12:00 PM" />
+
+        <!-- New Address Heading -->
+        <TextView
+            android:id="@+id/address_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/nunito"
+            android:text="Address"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/slot" />
+
+        <!-- Address Value -->
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="@font/nunito"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/address_label"
+            app:layout_constraintTop_toBottomOf="@+id/slot"
+            tools:text="123 Main St, City Name" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/orderstatus"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/greenbuttongradent"
+            android:fontFamily="@font/nunito"
+
+            android:gravity="center"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="Order Status"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/address" />
+
+        <RadioButton
+            android:id="@+id/radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="33dp"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="@font/nunito"
+            android:paddingStart="10dp"
+            android:text="Cancel Order"
+            android:onClick="onRadioButtonClick"
+            android:theme="@style/RadioButtonStyle"
+            android:button="@drawable/custome_radiobutton"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/orderstatus"
+            app:layout_constraintTop_toBottomOf="@+id/address" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

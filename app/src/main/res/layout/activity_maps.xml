@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        >
+
+         <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/white_bg"
+            android:queryHint="Search location"
+             android:fontFamily="@font/nunito"
+            android:iconifiedByDefault="false"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingEnd="40dp"
+            android:paddingRight="40dp"/>
+
+        <ImageView
+            android:id="@+id/arrowIcon"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_arrow_forward_24"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:padding="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"/>
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_confirm_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/search_shape"
+        android:backgroundTint="@color/navy"
+        android:textSize="15dp"
+        android:textAllCaps="false"
+        android:fontFamily="@font/nunito"
+        android:textColor="@color/white"
+        android:text="Confirm Location" />
+</RelativeLayout>

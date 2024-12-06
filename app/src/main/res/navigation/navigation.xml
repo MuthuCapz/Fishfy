@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/homeFragment">
+
+
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.capztone.fishfy.ui.activities.fragments.CartFragment"
+        android:label="fragment_cart"
+        tools:layout="@layout/fragment_cart" />
+
+    <fragment
+        android:id="@+id/profileAddress"
+        android:name="com.capztone.fishfy.ui.activities.fragments.ProfileAddress"
+        android:label="profile_address"
+        tools:layout="@layout/fragment_address2" />
+    <fragment
+        android:id="@+id/noNetworkFragment"
+        android:name="com.capztone.fishfy.ui.activities.fragments.NoNetwork"
+        android:label="No Network"
+        tools:layout="@layout/fragment_no_network" />
+    <action
+        android:id="@+id/action_mainactivity_to_noNetwork"
+        app:destination="@id/noNetworkFragment" />
+
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.capztone.fishfy.ui.activities.fragments.FavouriteFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.capztone.fishfy.ui.activities.fragments.HistoryFragment"
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_history" />
+    <fragment
+        android:id="@+id/homeloadFragment"
+        android:name="com.capztone.fishfy.ui.activities.fragments.HomeLoadFragment"
+        android:label="fragment_home_load"
+        tools:layout="@layout/fragment_home_load" />
+    <action
+        android:id="@+id/action_homefragment_to_homeloadfragment"
+        app:destination="@id/homeloadFragment" />
+    <action
+        android:id="@+id/action_homeloadfragemnt_to_homefragment"
+        app:destination="@id/homeFragment" />
+    <fragment
+        android:id="@+id/myordersfragment"
+        android:name="com.capztone.fishfy.ui.activities.fragments.MyOrdersFragment"
+        android:label="fragment_myorders"
+        tools:layout="@layout/fragment_my_orders" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.capztone.fishfy.ui.activities.fragments.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <activity
+        android:id="@+id/contactusActivity"
+        android:name="com.capztone.fishfy.ui.activities.ContactusActivity"
+        android:label="activity_contact"
+        tools:layout="@layout/activity_contactus" />
+    <activity
+        android:id="@+id/payout"
+        android:name="com.capztone.fishfy.ui.activities.PayoutActivity"
+        android:label="activity_payout"
+        tools:layout="@layout/activity_payout" />
+    <activity
+        android:id="@+id/languageActivity"
+        android:name="com.capztone.fishfy.ui.activities.LanguageActivity"
+        android:label="activity_language"
+        tools:layout="@layout/activity_language" />
+    <activity
+        android:id="@+id/profilelanguageActivity"
+        android:name="com.capztone.fishfy.ui.activities.ProfileLanguageActivity"
+        android:label="activity_profile_language"
+        tools:layout="@layout/activity_profile_language" />
+    <activity
+        android:id="@+id/main"
+        android:name="com.capztone.fishfy.ui.activities.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+
+    <fragment
+        android:id="@+id/accountFragment"
+        android:name="com.capztone.fishfy.ui.activities.fragments.AccountFragment"
+        android:label="fragment_account"
+        tools:layout="@layout/fragment_account" />
+    <fragment
+        android:id="@+id/shopOneFragment"
+        android:name="com.capztone.fishfy.ui.activities.fragments.ShopOneFragment"
+        android:label="fragment_shopone"
+        tools:layout="@layout/fragment_shop_one" />
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.capztone.fishfy.ui.activities.fragments.DetailsFragment"
+        android:label="fragment_shoptwo"
+        tools:layout="@layout/fragment_details" />
+    <fragment
+        android:id="@+id/payoutAddressFragment"
+        android:name="com.capztone.fishfy.ui.activities.fragments.PayoutAddressFragment"
+        android:label="fragment_payaddress"
+        tools:layout="@layout/fragment_payout_address" />
+
+    <action
+        android:id="@+id/action_payoutAddressFragment_to_addressFragment"
+        app:destination="@id/addressFragment" />
+    <action
+        android:id="@+id/action_addressfragment_to_profileManualAddress"
+        app:destination="@id/addressFragment" />
+    <action
+        android:id="@+id/action_profilemanualaddressfragment_to_addressFragment"
+        app:destination="@id/addressFragment" />
+    <action
+    android:id="@+id/action_profileFragment_to_AddressFragment"
+    app:destination="@id/addressFragment" />
+    <action
+        android:id="@+id/action_profileAddress_to_AddressFragment"
+        app:destination="@id/addressFragment" />
+    <action
+        android:id="@+id/action_searchFragment_to_detailsFragment"
+        app:destination="@id/detailsFragment" />
+    <action
+        android:id="@+id/action_favouritefragment_to_detailsFragment"
+        app:destination="@id/detailsFragment" />
+    <action
+        android:id="@+id/action_payoutAdress_to_payout"
+        app:destination="@id/payout" />
+    <action
+        android:id="@+id/action_loadingFragment_to_HomeFragment"
+        app:destination="@id/homeFragment" />
+   <fragment
+    android:id="@+id/addressFragment"
+    android:name="com.capztone.fishfy.ui.activities.fragments.AddressFragment"
+    android:label="AddressFragment" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.capztone.fishfy.ui.activities.fragments.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_productSearchFragment"
+            app:destination="@id/productSearchFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/freshFishFragment"
+        android:name="com.capztone.fishfy.ui.activities.fragments.FreshFishFragment"
+        android:label="FreshFishFragment" >
+    </fragment>
+
+
+
+    <fragment
+        android:id="@+id/productSearchFragment"
+        android:name="com.capztone.fishfy.ui.activities.fragments.ProductSearchFragment"
+        android:label="ProductSearchFragment" >
+
+    </fragment>
+
+
+    <action
+        android:id="@+id/action_homeFragment_to_shoponefragment"
+        app:destination="@id/shopOneFragment" />
+    <action
+        android:id="@+id/action_homeFragment_to_detailsFragment"
+        app:destination="@id/detailsFragment" />
+
+
+    <action
+        android:id="@+id/action_profileFragment_to_myProfileFragment"
+        app:destination="@id/accountFragment" />
+    <action
+        android:id="@+id/action_mainactivity_to_homefragment"
+        app:destination="@id/homeFragment" />
+    <action
+        android:id="@+id/action_homefragment_to_cartfragment"
+        app:destination="@id/cartFragment" />
+    <action
+        android:id="@+id/action_profileFragment_to_myorders"
+        app:destination="@id/myordersfragment" />
+    <action
+        android:id="@+id/action_profileFragment_to_about"
+        app:destination="@id/contactusActivity" />
+    <action
+        android:id="@+id/action_profileFragment_to_language"
+        app:destination="@id/languageActivity" />
+    <action
+        android:id="@+id/action_profileFragment_to_profileLanguage"
+        app:destination="@id/profilelanguageActivity" />
+    <action
+        android:id="@+id/action_detailsActivity_to_cartFragment"
+        app:destination="@id/cartFragment" />
+    <action
+        android:id="@+id/action_cartFragment_to_homefragment"
+        app:destination="@id/homeFragment" />
+    <action
+        android:id="@+id/action_cartFragment_to_main"
+        app:destination="@id/main" />
+    <action
+        android:id="@+id/action_homeFragment_to_FreshFishFragment"
+        app:destination="@id/freshFishFragment" />
+
+</navigation>

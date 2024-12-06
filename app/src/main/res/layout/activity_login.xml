@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    tools:context=".ui.activities.LoginActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        android:src="@drawable/loginpic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:fontFamily="@font/nunito"
+        android:textSize="50sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="600dp"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="400dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/fishfy"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="FISHFY"
+                android:textColor="@color/navy"
+                android:textStyle="bold"
+                android:fontFamily="@font/nunito"
+                android:textSize="25sp"
+                android:gravity="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="25dp"
+                 />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:textStyle="bold"
+                android:id="@+id/welcome"
+                android:textFontWeight="600"
+                android:fontFamily="@font/nunito"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/fishfy"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="20dp"
+                />
+
+            <LinearLayout
+                android:id="@+id/ll_phone_num"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginTop="25dp"
+                app:layout_constraintTop_toBottomOf="@id/welcome"
+                android:background="@drawable/whitebutton1"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="200dp">
+
+                <com.hbb20.CountryCodePicker
+                    android:id="@+id/ccp"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_gravity="center"
+                    app:ccp_autoDetectCountry="true"
+                    app:ccp_textSize="14sp"
+
+                    app:ccp_autoDetectLanguage="true"
+                    app:ccp_countryAutoDetectionPref="SIM_ONLY"
+                    app:ccp_defaultLanguage="ENGLISH"
+                    app:ccp_rememberLastSelection="true"
+                    app:ccp_showFlag="false"
+                    app:ccp_showPhoneCode="true" />
+
+
+
+                <EditText
+                    android:id="@+id/etPhoneNum"
+                    android:layout_width="0dp"
+                    android:layout_height="57dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:fontFamily="@font/nunito"
+                    android:maxLength="10"
+                    android:hint="Enter Mobile Number"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:layout_gravity="center"
+                    android:paddingStart="10dp"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textColorHint="#434347"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_get_otp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Get OTP"
+                android:textColor="@color/white"
+                android:background="@drawable/search_shape"
+                android:backgroundTint="@color/navy"
+                android:fontFamily="@font/nunito"
+                android:textAllCaps="false"
+                android:textSize="15sp"
+                app:icon="@drawable/ic_baseline_perm_phone_msg_24"
+
+                app:iconTint="@color/white"
+                app:iconGravity="textStart"
+                app:iconPadding="8dp"
+                app:layout_constraintTop_toBottomOf="@id/ll_phone_num"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"/>
+
+            <LinearLayout
+                android:id="@+id/or"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="40dp"
+                app:layout_constraintTop_toBottomOf="@id/btn_get_otp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="45dp"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Or Continue With"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/nunito"
+                    android:textColor="@color/black"
+                     android:layout_marginHorizontal="10dp"
+                    android:gravity="center"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="45dp"
+                    android:background="@color/black"/>
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/googleLoginbutton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="45dp"
+                android:text="@string/google"
+                android:textColor="@color/black"
+                android:background="@drawable/whitebutton"
+                android:drawableStart="@drawable/google_icon"
+                android:fontFamily="@font/nunito"
+                android:textAllCaps="false"
+                android:textSize="15sp"
+                android:paddingStart="20dp"
+                app:layout_constraintTop_toBottomOf="@id/or"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="120dp"
+                android:layout_marginEnd="120dp"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
