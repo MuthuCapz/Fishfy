@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/cardstroke2"
+    android:backgroundTint="@color/llorange"
+    android:padding="16dp"
+    >
+
+<TextView
+android:id="@+id/dialog_title"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="Different Shop"
+    android:textSize="18sp"
+    android:textColor="@color/black"
+    android:fontFamily="@font/nunito"
+android:textAppearance="?android:attr/textAppearanceLarge"
+android:paddingBottom="8dp" />
+
+<TextView
+android:id="@+id/dialog_message"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+    android:textColor="@color/black"
+    android:fontFamily="@font/nunito"
+    android:textSize="16sp"
+android:text="You have items from a different shop in your cart. Do you want to clear the cart and add this item?"
+android:paddingBottom="16dp" />
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:gravity="center"
+android:orientation="horizontal">
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/dialog_negative_button"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="No"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/greenbuttongradent"
+        android:fontFamily="@font/nunito"
+         />
+
+<androidx.appcompat.widget.AppCompatButton
+    android:id="@+id/dialog_positive_button"
+    android:layout_width="120dp"
+    android:layout_height="wrap_content"
+    android:text="Yes"
+    android:textSize="16sp"
+    android:layout_marginStart="15dp"
+    android:textColor="@android:color/white"
+    android:background="@drawable/greenbuttongradent"
+android:fontFamily="@font/nunito" />
+
+
+
+</LinearLayout>
+    </LinearLayout>

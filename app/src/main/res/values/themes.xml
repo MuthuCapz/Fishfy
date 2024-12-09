@@ -1,0 +1,107 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Sea" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/navy</item>
+        <item name="colorPrimaryDark">@color/navy</item>
+        <item name="colorAccent">@color/navy</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="windowActionBarOverlay">true</item>
+    </style>
+
+    <!-- styles.xml -->
+    <style name="FullScreenDialogStyle" parent="Theme.Design.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    <style name="RadioButtonStyle" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@color/navy</item>
+        <item name="android:textColorPrimary">@color/navy</item>
+    </style>
+
+    <style name="colored_checkBox" parent="Theme.AppCompat.Light">
+        <!-- selected checkbox color -->
+        <item name="colorAccent">@color/navy</item>
+        <item name="android:textColorPrimary">@color/navy</item>
+    </style>
+    <style name="CustomDialogThemee" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- Add other customizations if needed -->
+    </style>
+    <style name="CustomDialogThem" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowMinWidthMajor">90%</item>
+        <!-- Add other customizations if needed -->
+    </style>
+    <!-- Add this to your styles.xml file -->
+    <style name="CustomDialogg" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="BlackTextStyle">
+        <item name="android:textColor">#000000</item> <!-- This sets the text color to black -->
+    </style>
+
+    <style name="CustomAlertDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:textColorPrimary">@color/navy</item> <!-- Text Color -->
+    </style>
+
+    <!-- styles.xml -->
+    <style name="NetworkDialogStyle" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
+
+    <style name="RetryButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">@color/navy</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="BlueTitleAlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!-- Change title color to green -->
+        <item name="android:textColorPrimary">#316FF6</item>
+        <item name="colorAccent">@android:color/black</item>
+    </style>
+
+    <style name="AppTheme.Dark" parent="Theme.AppCompat">
+        <item name="android:windowBackground">@color/black</item>
+        <!-- Add other dark theme attributes here -->
+    </style>
+
+    <style name="CustomDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">@color/white</item>
+        <item name="android:textColor">@color/navy</item>
+    </style>
+    <!-- Light Theme -->
+    <style name="AppTheme.Light" parent="Theme.AppCompat.Light">
+        <item name="android:windowBackground">@color/white</item>
+        <!-- Add other light theme attributes here -->
+    </style>
+
+    <style name="AlertDialogCustomStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:textColor">#FF0000</item> <!-- Change text color to red -->
+    </style>
+
+    <style name="GreenTitleAlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!-- Change title color to green -->
+        <item name="android:textColorPrimary">#45CC93</item>
+    </style>
+
+    <style name="PopupMenuStyle" parent="@style/Widget.AppCompat.PopupMenu">
+        <item name="android:textColor">@color/navy</item>
+    </style>
+    <!-- Base application theme. -->
+    <style name="Base.Base.Theme.Sea" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+
+
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/llorange"
+    tools:context=".ui.activities.LocationNotAvailable">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/nunito"
+        android:text="Sorry! Shops aren't accepting orders for your location"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/notdelivery"
+        android:layout_below="@id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/another"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/search_shape"
+        android:layout_below="@id/imageView"
+        android:backgroundTint="@color/navy"
+        android:textAllCaps="false"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:text="Use Another Location"
+        android:textColor="@color/white"
+        android:fontFamily="@font/nunito"
+        android:textSize="15sp"
+        android:textFontWeight="500"/>
+</RelativeLayout>

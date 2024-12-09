@@ -1,0 +1,9 @@
+<!-- progress_bar_navy.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="ring" android:useLevel="false">
+            <size android:width="40dp" android:height="40dp" />
+            <solid android:color="@color/navy" />
+        </shape>
+    </item>
+</layer-list>

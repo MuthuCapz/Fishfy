@@ -1,0 +1,77 @@
+<!-- item_saved_address.xml -->
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="8dp"
+    app:cardElevation="2dp"
+    android:layout_marginTop="8dp"
+    android:backgroundTint="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/iconimg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/home"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/Home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:textSize="16sp"
+                android:fontFamily="@font/nunito"
+                android:textColor="@color/navy"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"/>
+        </LinearLayout>
+
+
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:lineSpacingExtra="7dp"
+            android:layout_marginEnd="40dp"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:background="@null"
+            android:enabled="false"
+            android:gravity="start"
+            android:textFontWeight="300"
+            android:textAlignment="textStart"
+            android:fontFamily="@font/nunito"/>
+
+
+    </LinearLayout>
+
+    <RadioButton
+        android:id="@+id/selectaddress"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center_vertical|end"
+        android:gravity="center"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="10dp"
+        android:button="@drawable/custome_radiobutton"
+        android:onClick="onRadioButtonClick"
+        android:theme="@style/RadioButtonStyle"/>
+
+</androidx.cardview.widget.CardView>

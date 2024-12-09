@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/home"
+        android:fontFamily="@font/nunito"
+        android:textSize="14sp"
+        android:title="@string/home" />
+
+    <item
+        android:id="@+id/cartFragment"
+        android:icon="@drawable/cart"
+        android:fontFamily="@font/nunito"
+        android:textSize="14sp"
+        android:title="@string/cart" />
+
+    <item
+        android:id="@+id/searchFragment"
+        android:icon="@drawable/ic_favorite_border"
+        android:fontFamily="@font/nunito"
+        android:textSize="14sp"
+        android:title="Favourite" />
+
+    <item
+        android:id="@+id/historyFragment"
+        android:icon="@drawable/menu"
+        android:fontFamily="@font/nunito"
+        android:textSize="14sp"
+        android:title="@string/history" />
+
+    <item
+        android:id="@+id/profileFragment"
+        android:fontFamily="@font/nunito"
+        android:textSize="14sp"
+        android:icon="@drawable/user"
+        android:title="@string/profile" />
+</menu>

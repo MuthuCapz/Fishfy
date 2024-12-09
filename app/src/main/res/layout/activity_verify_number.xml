@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.activities.VerifyNumberActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="ENTER OTP"
+        android:fontFamily="@font/nunito"
+        android:layout_marginTop="70dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/navy"/>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/img_msg_icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/ic_baseline_near_me_24"
+        android:tint="@color/navy"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_authenticate_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="cursive"
+        android:text="Verify Number"
+        app:fontFamily="@font/nunito"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_msg_icon" />
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/et_otp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:focusableInTouchMode="true"
+        android:focusedByDefault="false"
+        android:hint="OTP"
+        android:textColorHint="@color/grey_font"
+        app:endIconMode="clear_text"
+        app:errorEnabled="true"
+        app:hintTextColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/text_authenticate_num">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:inputType="number"
+            android:singleLine="true" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_verify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/search_shape"
+        android:backgroundTint="@color/navy"
+        android:textFontWeight="500"
+        android:lineHeight="24px"
+        android:fontFamily="@font/nunito"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:textAllCaps="false"
+        android:layout_marginTop="20dp"
+        android:text="Verify"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_otp" />
+
+    <TextView
+        android:id="@+id/resendotp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_verify"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Didn't receive OTP?  Resend OTP"
+        android:fontFamily="@font/nunito"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/ThickAsh"
+        android:textSize="14sp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        android:textFontWeight="700"
+        android:lineHeight="24px"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
